@@ -1,0 +1,1 @@
+export const APAGAR_PRODUCT = 'APAGAR_PRODUCT'

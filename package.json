@@ -1,0 +1,27 @@
+{
+  "name": "ecommerce-backend-company",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Leodeymison Alcântara e Laurício de Souza",
+  "scripts": {
+    "start": "tsc && node ./dist/app.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@graphql-tools/load-files": "^6.5.4",
+    "@graphql-tools/merge": "^8.2.14",
+    "apollo-server": "^3.8.2",
+    "dotenv": "^16.0.1",
+    "graphql": "^16.5.0",
+    "jest": "^28.1.1",
+    "mongoose": "^6.3.8",
+    "slugify": "^1.6.5",
+    "supertest": "^6.2.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.2",
+    "@types/supertest": "^2.0.12",
+    "typescript": "^4.7.3"
+  }
+}
