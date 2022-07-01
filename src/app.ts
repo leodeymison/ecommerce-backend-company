@@ -17,7 +17,7 @@ class App {
     }
 
     private database(){
-        mongoose.connect('mongodb://localhost:27017/database-shop')
+        mongoose.connect('mongodb://localhost:27017/database-company')
     }
 }
 
