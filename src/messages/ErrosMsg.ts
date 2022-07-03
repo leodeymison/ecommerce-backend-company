@@ -2,25 +2,27 @@ export function errosLog(lang:'pt-br') {
     return langs[lang]
 }
 
-type CamposList = 'name' | 'email' | 'description' | 'about' | 'logo' | 'favicon' | 'facebook' | 'instagram' | 'youtube' |
-'politic' | 'cep' | 'link_de_endereço' | 'slug' | 'value' | 'video' | 'code' | 'avaliation' | 'image' |
-'sub_categort' | 'categoryId' | 'shopId'
+type CamposList = 'name' | 'slug' | 'email' | 'code' | 'status' | 'login' | 'password'
 interface CamposBr {
-    name: string, email: string, description: string, about: string, logo: string, favicon: string,
-    facebook: string, instagram: string, youtube: string, politic: string, cep: string,
-    link_de_endereço: string, slug: string, value: string, video: string, code: string,
-    avaliation: string, image: string, sub_categort: string, categoryId: string, shopId: string
+    name: string,
+    slug: string,
+    email: string,
+    code: string,
+    status: string,
+    login: string,
+    password: string
 }
 const campos: {
     'pt-br': CamposBr
 } = {
     'pt-br': {
-        name: 'nome', email: 'email', description: 'descrição', about: 'sobre',
-        logo: 'logo', favicon: 'simbolo de logo - favicon', facebook: 'facebook',
-        instagram: 'instagram', youtube: 'youtube', politic: 'política', cep: 'CEP',
-        link_de_endereço: 'link de endereço', slug: 'Slug de url', value: "valor", video: "vídeo",
-        code: 'código', avaliation: 'validação', image: 'imagem', sub_categort: 'sub categoria',
-        categoryId: 'id da categoria', shopId: 'id da loja'
+        name: "nome",
+        slug: "slug de url",
+        email: "e-mail",
+        code: 'código',
+        status: 'status',
+        login: 'login',
+        password: 'senha'
     }
 }
 

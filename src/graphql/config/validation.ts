@@ -1,14 +1,7 @@
-import { ShopValidationAll } from '../modules/Shop/dataset/Shop.validation';
-import { ProductValidationAll } from '../modules/Product/dataset/Product.validation'
-import { SubCategoryValidationAll } from '../modules/SubCategory/dataset/SubCategory.validation'
-import { CategoryValidationAll } from '../modules/Category/dataset/Category.validation'
-
-export type list = 'Shop' | 'Product' | 'SubCategory' | 'Category'
+import { CompanyValidationAll } from '../modules/dataset/company.validation';
+export type list = 'Company'
 const validation = {
-    Shop: ShopValidationAll,
-    Product: ProductValidationAll,
-    SubCategory: SubCategoryValidationAll,
-    Category: CategoryValidationAll,
+    Company: CompanyValidationAll,
 }
 
 export default validation
