@@ -2,15 +2,27 @@ export function errosLog(lang:'pt-br') {
     return langs[lang]
 }
 
-type CamposList = 'name'
+type CamposList = 'name' | 'slug' | 'email' | 'code' | 'status' | 'login' | 'password'
 interface CamposBr {
-    name: string
+    name: string,
+    slug: string,
+    email: string,
+    code: string,
+    status: string,
+    login: string,
+    password: string
 }
 const campos: {
     'pt-br': CamposBr
 } = {
     'pt-br': {
-        name: "nome"
+        name: "nome",
+        slug: "slug de url",
+        email: "e-mail",
+        code: 'código',
+        status: 'status',
+        login: 'login',
+        password: 'senha'
     }
 }
 

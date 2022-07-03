@@ -1,27 +1,25 @@
 import { gql } from "apollo-server";
+import { 
+    DeleteOneInputCompany,
+    getCompanyInput,
+    getCompanyInputFilter
+} from './helpers/company.input';
+import {
+    DeleteOneCompanyReturn,
+    UpdateOneCompanyReturn,
+    getCompanyType
+} from './helpers/company.types';
 
 export const typeDefs = gql`
     # Querys
-    type getCompanyType {
-
-    }
-    type UpdateOneCompanyReturn {
-
-    }
-    type DeleteOneCompanyReturn {
-
-    }
+    type getCompanyType ${getCompanyType}
+    type UpdateOneCompanyReturn ${UpdateOneCompanyReturn}
+    type DeleteOneCompanyReturn ${DeleteOneCompanyReturn}
 
     # Mutations
-    input getCompanyInput {
-
-    }
-    input getCompanyInputFilter {
-
-    }
-    input DeleteOneInputCompany {
-
-    }
+    input getCompanyInput ${getCompanyInput}
+    input getCompanyInputFilter ${getCompanyInputFilter}
+    input DeleteOneInputCompany ${DeleteOneInputCompany}
     
 
     type Query {
